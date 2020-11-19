@@ -1,5 +1,12 @@
 export default {
     welcome: 'Bem-vindo ao Yeep',
+    tabLabels: {
+      homeTabLabel: 'Inicio',
+      feedTabLabel: 'Feed',
+      bagsTabLabel: 'Sacolas',
+      searchTabLabel: 'Buscar',
+      profileTabLabel: 'Perfil',
+    },
     actions: {
       continue: 'Continue',
     },

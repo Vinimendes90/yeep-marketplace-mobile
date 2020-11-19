@@ -13,9 +13,17 @@ export const Colors = {
   // Example colors:
   white: '#ffffff',
   text: '#212529',
-  primary: '#E14032',
+  primary: '#5925FF',
+  ligthBlue: '#E4DCFF',
   success: '#28a745',
   error: '#dc3545',
+  lightRed: '#FC1055',
+  text: '#212529',
+  ligthGray: '#ECECEC',
+  ligthGray2: '#AFAFBD',
+  mediumGray: '#999999',
+  mediumGray2: '#979797',
+  backgroundGray: '#F5F5F5',
 }
 
 /**

@@ -3,12 +3,12 @@ import { View, Text } from 'react-native';
 
 // import { Container } from './styles';
 
-const HomeScreen = () => {
+const UserBagsScreen = () => {
   return (
     <View>
-      <Text>HOME SCREEN</Text>
+      <Text>BAGS SCREEN</Text>
     </View>
   );
 }
 
-export default HomeScreen;
+export default UserBagsScreen;

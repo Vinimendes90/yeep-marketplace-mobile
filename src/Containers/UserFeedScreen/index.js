@@ -3,12 +3,12 @@ import { View, Text } from 'react-native';
 
 // import { Container } from './styles';
 
-const HomeScreen = () => {
+const UserFeedScreen = () => {
   return (
     <View>
-      <Text>HOME SCREEN</Text>
+      <Text>FEED SCREEN</Text>
     </View>
   );
 }
 
-export default HomeScreen;
+export default UserFeedScreen;

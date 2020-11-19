@@ -1,5 +1,12 @@
 export default {
   welcome: 'Welcome to Yeep',
+  tabLabels: {
+    homeTabLabel: 'Home',
+    feedTabLabel: 'Feed',
+    bagsTabLabel: 'Bags',
+    searchTabLabel: 'Search',
+    profileTabLabel: 'Profile',
+  },
   actions: {
     continue: 'Continue',
   },
