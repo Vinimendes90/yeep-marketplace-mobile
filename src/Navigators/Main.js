@@ -1,14 +1,13 @@
 import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-// import { HomeNavigator } from '@/Navigators/Home'
-import { LoginContainer } from '@/Containers'
+import { LoginContainer, StoreScreen } from '@/Containers'
 import { createStackNavigator } from '@react-navigation/stack'
 
 const Stack = createStackNavigator()
 
 // @refresh reset
 const MainNavigator = () => {
-  HomeNavigator = require('@/Navigators/Home').default
+  const HomeNavigator = require('@/Navigators/Home').default
 
   return (
     <Stack.Navigator
@@ -30,6 +29,10 @@ const MainNavigator = () => {
       <Stack.Screen
         name="Initial"
         component={HomeNavigator}
+      />
+      <Stack.Screen
+        name="StoreScreen"
+        component={StoreScreen}
       />
     </Stack.Navigator>
     // <LoginContainer />

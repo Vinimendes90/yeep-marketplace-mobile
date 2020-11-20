@@ -8,3 +8,5 @@ export { default as UserFeedContainer } from './UserFeedScreen/index'
 export { default as UserBagsContainer } from './UserBagsScreen/index'
 export { default as ExplorerContainer } from './ExplorerScreen/index'
 export { default as MyProfileContainer } from './MyProfileScreen/index'
+// STORE SCREEN
+export { default as StoreScreen } from './StoreScreen/Index'
