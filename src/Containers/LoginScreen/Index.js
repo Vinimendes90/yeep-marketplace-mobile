@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useTranslation } from 'react-i18next'
 
 import SignIn from '@/Store/User/SignIn'
-import { Colors } from '@/Theme';
+import { Colors, Fonts } from '@/Theme';
 
 // import { Container } from './styles';
 
@@ -46,7 +46,9 @@ const LoginScreen = ({ navigation }) => {
         // }
     
         navigation.navigate('Initial')
-      }
+    }
+
+    if(user && user.token) redirectAfterSignIn()
 
     const email = useRef(null)
     const password = useRef(null)
@@ -108,7 +110,7 @@ const LoginScreen = ({ navigation }) => {
                 }}
                 />
                 {touched.email && errors.email ?
-                    <Text style={{ marginBottom: 15, fontSize: 12, color: Colors.lightRed }}>
+                    <Text style={Fonts.textSmall, { marginBottom: 15, color: Colors.lightRed }}>
                         {errors.email}
                     </Text>
                 : null }
@@ -127,7 +129,7 @@ const LoginScreen = ({ navigation }) => {
                 }}
                 />
                 {touched.password && errors.password ?
-                    <Text style={{ marginBottom: 15, fontSize: 12, color: Colors.lightRed }}>
+                    <Text style={Fonts.textSmall, { marginBottom: 15, color: Colors.lightRed }}>
                         {errors.password}
                     </Text>
                 : null }
