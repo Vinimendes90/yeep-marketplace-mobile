@@ -1,9 +1,16 @@
 import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
+import { useDispatch, useSelector } from 'react-redux'
 
 // import { Container } from './styles';
 
 const HomeScreen = ({ navigation }) => {
+  
+  const user = useSelector((state) => state.user.item)
+  const signIn = useSelector((state) => state.user.signIn)
+
+  console.log({user})
+  console.log({signIn})
   return (
     <View>
       <Text>HOME SCREEN</Text>

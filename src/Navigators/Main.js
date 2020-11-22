@@ -1,17 +1,19 @@
 import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { LoginContainer, StoreScreen } from '@/Containers'
+import { useDispatch, useSelector } from 'react-redux'
 import { createStackNavigator } from '@react-navigation/stack'
+import { LoginContainer, StoreScreen } from '@/Containers'
 
 const Stack = createStackNavigator()
 
 // @refresh reset
 const MainNavigator = () => {
+  const user = useSelector((state) => state.user.item)
   const HomeNavigator = require('@/Navigators/Home').default
 
   return (
     <Stack.Navigator
-      initialRouteName="Login"
+      initialRouteName={user && user.token ? 'Initial' : 'Login'}
       screenOptions={{
           headerShown: false
       }}

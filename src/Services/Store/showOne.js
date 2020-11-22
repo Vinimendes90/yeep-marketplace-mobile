@@ -6,12 +6,12 @@ export default async (storeId, token) => {
   }
 
   try {
-      const response = await api.get(`stores/${storeId}`)
-      console.log({response});
+      const response = await api.get(`stores/${storeId}`, {}, {
+        authorization: `Bearer ${token}`
+      })
 
-    //   return response
+      return response.data;
   } catch (error) {
-    console.log(error);
     return handleError({ message: error })
   }
 }

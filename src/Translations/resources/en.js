@@ -7,6 +7,12 @@ export default {
     searchTabLabel: 'Search',
     profileTabLabel: 'Profile',
   },
+  auth: {
+    emailNotValid: 'Not a valid email',
+    emailRequired: 'Email is required',
+    passwordRequired: 'Password is required',
+    passwordMin: 'Password must be at least 6 characters',
+  },
   actions: {
     continue: 'Continue',
   },
